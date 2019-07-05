@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单确认</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/order_payment.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_433252_wjn80qqgogk3xr.css">
+</head>
+<body>
+<!--右侧工具菜单-->
+<div id="toolbar">
+    <ul class="toolbar_icon">
+        <li>
+            <a >
+                <i class="iconfont icon-yonghu"></i>
+                用户
+            </a>
+        </li>
+        <li class="cart_icon">
+            <a >
+                <b>0</b>
+                <i class="iconfont icon-gouwuche"></i>
+                购物车
+            </a>
+            <!--右侧内容栏-->
+
+            <div class="toolbar_detail">
+                <div class="toolbar_cart">
+                    <p class="cart_title">
+                        <i class="iconfont icon-guanbi rt"></i>
+                        <i class="iconfont icon-gouwuche"></i>
+                        <span>购物车</span>
+                    </p>
+                    <ul class="cart_list">
+                        <li>
+                            <div class="cart_pic">
+                                <a >
+                                    <img src="products/qq/cp_2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <p class="cart_p_title">
+                                    梵迷琳神仙贵妇膏 素颜霜 紧致 淡化细纹 祛痘
+                                </p>
+                                <p class="cart_p_price">
+                                    <span>123.00 </span>x2
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cart_pic">
+                                <a >
+                                    <img src="products/qq/cp_2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <p class="cart_p_title">
+                                    梵迷琳神仙贵妇膏 素颜霜 紧致 淡化细纹 祛痘
+                                </p>
+                                <p class="cart_p_price">
+                                    <span>123.00 </span>x2
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cart_total">
+                        <div class="lf">
+                            <p><b>2</b> 件商品</p>
+                            <p>共计：<b>123.00</b> 元</p>
+                        </div>
+                        <button id="btnTotal">去购物车结算</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a >
+                <i class="iconfont icon-shoucang"></i>
+                收藏
+            </a>
+        </li>
+        <li>
+            <a >
+                <i class="iconfont icon-zuji"></i>
+                足迹
+            </a>
+        </li>
+        <li>
+            <a >
+                <i class="iconfont icon-erweima"></i>
+                微信
+            </a>
+        </li>
+        <li>
+            <a >
+                <i class="iconfont icon-kefu"></i>
+                客服
+            </a>
+        </li>
+        <li>
+            <a >
+                <i class="iconfont icon-fankui"></i>
+                反馈
+            </a>
+        </li>
+        <li>
+            <a >
+                <i class="iconfont icon-huidingbu"></i>
+                返回顶部
+            </a>
+        </li>
+    </ul>
+    <div class="toolbar_show"></div>
+    <!--右侧内容栏-->
+    <div class="toolbar_detail">
+        <div class="toolbar_cart">
+            <p class="cart_title">
+                <i class="iconfont icon-guanbi rt"></i>
+                <i class="iconfont icon-gouwuche"></i>
+                <span>购物车</span>
+            </p>
+            <ul class="cart_list">
+                <li>
+                    <div class="cart_pic">
+                        <a >
+                            <img src="products/qq/cp_2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <p class="cart_p_title">
+                            梵迷琳神仙贵妇膏 素颜霜 紧致 淡化细纹 祛痘
+                        </p>
+                        <p class="cart_p_price">
+                            <span>123.00 </span>x2
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart_pic">
+                        <a >
+                            <img src="products/qq/cp_2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <p class="cart_p_title">
+                            梵迷琳神仙贵妇膏 素颜霜 紧致 淡化细纹 祛痘
+                        </p>
+                        <p class="cart_p_price">
+                            <span>123.00 </span>x2
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="cart_total">
+                <div class="lf">
+                    <p><b>2</b> 件商品</p>
+                    <p>共计：<b>123.00</b> 元</p>
+                </div>
+                <button id="btnTotal">去购物车结算</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页面顶部-->
+<header id="top">
+    <div class="wrap">
+        <!--右侧：文字列表-->
+        <ul class="rt">
+            <li>
+                欢迎光临本店！
+                <a  class="login">[请登录]</a>
+                新用户
+                <a  class="register" >[免费注册]</a>
+            </li>
+            <li>
+                <!--边框-->
+                <b></b>
+                <a >我的订单</a>
+            </li>
+            <li>
+                <b></b>
+                <a >购物车</a>
+            </li>
+            <li>
+                <b></b>
+                <a >联系我们</a>
+            </li>
+            <li class="client">
+                <b></b>
+                <a >
+                    客户服务
+                </a>
+                <!--客户服务列表-->
+                <ul id="service-items">
+                    <li><a >常见问题</a></li>
+                    <li><a >在线退换货</a></li>
+                    <li><a >在线投诉</a></li>
+                    <li><a >配送范围</a></li>
+                </ul>
+            </li>
+            <li class="app">
+                <b></b>
+                <a >
+                    <i class="iconfont icon-shouji"></i>
+                    手机版
+                </a>
+                <div id="QR">
+                    <img src="img/QRcode.jpg">
+                </div>
+
+            </li>
+        </ul>
+        <span class="lf">下午好，欢迎光临宏颜知己！ &nbsp;</span>
+        <!--图片：五角星-->
+        <i class="iconfont icon-wujiaoxing lf"></i>
+        <!--链接：收藏-->
+        <a  class="lf">收藏我们</a>
+    </div>
+</header>
+<!--logo+搜索栏-->
+<div id="top_main">
+    <div class="wrap">
+        <!--logo-->
+        <a  class="lf"><img src="img/logo.png" alt=""></a>
+        <!--搜索栏+关键字-->
+        <div id="search_box" class="lf">
+            <!--上：搜索栏-->
+            <div class="search" >
+                <input type="text">
+                <button id="btnSearch">搜索</button>
+            </div>
+            <!--下：关键字-->
+            <ul class="keyWords">
+                <li>
+                    <a >保湿</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a >美白</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a >氨基酸洗面奶</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a >补水</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a >眼霜</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a >口红</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a >BB霜</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a >美白精华</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a >森田</a>
+                </li>
+            </ul>
+        </div>
+        <!--购物车-->
+        <div class="rt shopping_list">
+            <div class="cart">
+                <i class="iconfont icon-gouwuche "></i>
+                我的购物车
+                <em></em>
+                <span id="shopping_amount">200</span>
+            </div>
+            <!--购物车下拉菜单-->
+            <div id="cart_items">
+                <div class="p_space"></div>
+                <!--商品菜单-->
+                <ul class="p_list">
+                    <li>
+                        <div class="p_pic lf">
+                            <a >
+                                <img src="products/p_1.jpg" width="50" >
+                            </a>
+                        </div>
+                        <div class="lf p_info">
+                            <p class="p_title">产品名称</p>
+                            <p class="p-price">价格 <span>X 数量</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p_pic lf">
+                            <a >
+                                <img src="products/p_2.jpg"   width="50">
+                            </a>
+                        </div>
+                        <div class="lf p_info">
+                            <p class="p_title">产品名称</p>
+                            <p class="p_price">价格 <span>X 数量</span></p>
+                        </div>
+                    </li>
+                </ul>
+                <!--结算部分-->
+                <div class="p_total clear">
+                    <div class="p_whole lf">
+                        <p>共 <span>2</span> 件商品</p>
+                        <p>共计 <span class="p_amount">￥121.9</span> </p>
+                    </div>
+                    <button id="btnAccount" >去购物车结算</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主导航-->
+<nav id="nav">
+    <div class="wrap clear">
+        <!--全部商品分类标签-->
+        <div class="cate">
+            <a >全部商品分类</a>
+            <!--商品分类信息-->
+            <ul id="cate_box">
+                <li>
+                    <div class="menu">
+                        <p class="menu_name">
+                            <span><</span>
+                            <a >面部护理</a>
+                        </p>
+                        <ul class="link_name clear">
+                            <li><a >乳液</a></li>
+                            <li><a >面霜</a></li>
+                            <li><a >洁面</a></li>
+                            <li><a >精华</a></li>
+                        </ul>
+                    </div>
+                    <!--子分类弹出框-->
+                    <div class="menu_detail">
+                        <dl class="clear">
+                            <dt>
+                                <a >
+                                    面膜
+                                </a>
+                                <span>&gt</span>
+                            </dt>
+                            <dd >
+                                <a >撕拉面膜</a>
+                                <a >面膜贴</a>
+                                <a >免洗面膜</a>
+                                <a >水洗面膜</a>
+                                <a >睡眠面膜</a>
+                                <a >蚕丝面膜</a>
+                                <a >泥面膜</a>
+                            </dd>
+                        </dl>
+                        <dl class="clear">
+                            <dt>
+                                <a >洁面</a>
+                                <span>&gt</span>
+                            </dt>
+                            <dd>
+                                <a >洁面摩丝</a>
+                                <a >洁面乳</a>
+                                <a >洁面啫喱/胶</a>
+                                <a >面部去角质/磨砂</a>
+                                <a >洁面膏/霜</a>
+                                <a >手工皂</a>
+                                <a >氨基酸洗面奶</a>
+                            </dd>
+                        </dl>
+                        <dl class="clear">
+                            <dt>
+                                <a >化妆水</a>
+                                <span>&gt</span>
+                            </dt>
+                            <dd>
+                                <a >喷雾</a>
+                                <a >精华水</a>
+                                <a >柔肤水</a>
+                                <a >爽肤水</a>
+                                <a >收敛水/紧肤水</a>
+                            </dd>
+                        </dl>
+                        <dl class="clear">
+                            <dt>
+                                <a >眼部护理</a>
+                                <span>&gt</span>
+                            </dt>
+                            <dd>
+                                <a >眼霜</a>
+                                <a >眼部凝胶</a>
+                                <a >眼部精华</a>
+                                <a >蒸汽眼罩</a>
+                                <a >眼膜</a>
+                                <a >精油护理</a>
+                                <a >睫毛滋养液</a>
+                                <a >眼部护理套装</a>
+                                <a >滴/洗眼液</a>
+                            </dd>
+                        </dl>
+                        <dl class="clear">
+                            <dt>
+                                <a >唇部护理</a>
+                                <span>&gt</span>
+                            </dt>
+                            <dd>
+                                <a >润唇膏</a>
+                                <a >唇部精华</a>
+                                <a >唇膜</a>
+                            </dd>
+                        </dl>
+                        <dl class="clear">
+                            <dt>
+                                <a >防晒</a>
+                                <span>&gt</span>
+                            </dt>
+                            <dd>
+                                <a >防晒霜</a>
+                                <a >防晒乳液</a>
+                                <a >防晒隔离乳</a>
+                                <a >防晒喷雾</a>
+                                <a >防晒唇膏</a>
+                                <a >日常防晒</a>
+                                <a >旅行防晒</a>
+                                <a >晒后修复</a>
+                            </dd>
+                        </dl>
+                        <dl class="clear">
+                            <dt>
+                                <a >乳液</a>
+                                <span>&gt</span>
+                            </dt>
+                            <dd>
+                                <a >美白</a>
+                                <a >抗皱</a>
+                                <a >抗老化</a>
+                                <a >抗糖化</a>
+                                <a >补水</a>
+                                <a >啫喱</a>
+                                <a >凝露/凝胶</a>
+                                <a >按摩霜</a>
+                                <a >匀净透亮</a>
+                                <a >瘦脸</a>
+                                <a >提拉紧致</a>
+                                <a >排浊</a>
+                                <a >修复痘痕</a>
+                                <a >排毒</a>
+                                <a >收缩毛孔</a>
+                            </dd>
+                        </dl>
+                        <dl class="clear">
+                            <dt>
+                                <a >精油</a>
+                                <span>&gt</span>
+                            </dt>
+                            <dd>
+                                <a >花水/纯露</a>
+                                <a >基础油</a>
+                                <a >香薰用具</a>
+                                <a >补水</a>
+                                <a >舒缓</a>
+                                <a >美体</a>
+                                <a >焕肤</a>
+                                <a >去黑眼圈</a>
+                                <a >愉悦心情</a>
+                                <a >增强免疫力</a>
+                                <a >深层清洁</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <p class="menu_name">
+                            <span><</span>
+                            <a >身体护理</a>
+                        </p>
+                        <ul class="link_name clear">
+                            <li><a >颈部</a></li>
+                            <li><a >沐浴</a></li>
+                            <li><a >润肤</a></li>
+                            <li><a >精油</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-detail">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <p class="menu_name">
+                            <span><</span>
+                            <a >男士护理</a>
+                        </p>
+                        <ul class="link_name clear">
+                            <li><a >男士面膜</a></li>
+                            <li><a >洗面奶</a></li>
+                            <li><a >剃须护理</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <p class="menu_name">
+                            <span><</span>
+                            <a >洗发护发</a>
+                        </p>
+                        <ul class="link_name clear">
+                            <li><a >洗发</a></li>
+                            <li><a >护发</a></li>
+                            <li><a >染发</a></li>
+                            <li><a >造型</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu_detail">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <p class="menu_name">
+                            <span><</span>
+                            <a >香水彩妆</a>
+                        </p>
+                        <ul class="link_name clear">
+                            <li><a >BB霜</a></li>
+                            <li><a >化妆棉</a></li>
+                            <li><a >女士香水</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-detail">
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <p class="menu_name">
+                            <span><</span>
+                            <a >口腔护理</a>
+                        </p>
+                        <ul class="link_name clear">
+                            <li><a >牙膏/牙粉</a></li>
+                            <li><a >牙刷</a></li>
+                            <li><a >漱口水</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-detail">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <p class="menu_name">
+                            <span><</span>
+                            <a >品牌</a>
+                        </p>
+                        <ul class="link_name clear">
+                            <li><a >倩碧</a></li>
+                            <li><a >香奈儿</a></li>
+                            <li><a >迪奥</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-detail">
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!--导航栏-->
+        <ul class="nav">
+            <li>
+                <a >首页</a>
+            </li>
+            <li>
+                <a >日常护理</a>
+            </li>
+            <li>
+                <a >女士专区</a>
+            </li>
+            <li>
+                <a >男士专区</a>
+            </li>
+            <li class="on">
+                <a >限时团购</a>
+            </li>
+            <li>
+                <a >国际大牌</a>
+            </li>
+            <li>
+                <em></em>
+                <a >礼品DIY</a>
+            </li>
+            <li>
+                <a >联系我们</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--主体部分-->
+<section id="main" class=" clear">
+    <img src="img/Process_img_02.png" alt="">
+    <h1>收件人信息</h1>
+    <!--收货地址-->
+    <div id="addr">
+        <p>选择收货地址 <a  class="rt">+添加地址</a></p>
+        <ul class="addr_box clear">
+                <li class="addr_choose">
+                    <div class="addr_cont">
+                    <p>小张</p>
+                    <p>四川成都高新区创业路10号3栋1单元1102式</p>
+                    <p>18908269130</p>
+                    <p class="postcode">
+                        <span>1</span>
+                        <span>1</span>
+                        <span>1</span>
+                        <span>1</span>
+                        <span>1</span>
+                        <span>1</span>
+                    </p>
+                    </div>
+                    <span class="default">默认地址</span>
+                    <!--遮罩层-->
+                    <div class="shade">
+                        <a  class="btn_del"></a>
+                        <a  class="btn_modify"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="addr_cont">
+                    <p>小张</p>
+                    <p>四川成都高新区创业路10号3栋1单元1102式</p>
+                    <p>18908269130</p>
+                    <p class="postcode">
+                        <span>1</span>
+                        <span>1</span>
+                        <span>1</span>
+                        <span>1</span>
+                        <span>1</span>
+                        <span>1</span>
+                    </p>
+                    </div>
+                    <!--遮罩层-->
+                    <div class="shade">
+                        <a  class="btn_del"></a>
+                        <a  class="btn_modify"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="addr_cont">
+                    <p>小张</p>
+                    <p>四川成都高新区创业路10号3栋1单元1102式</p>
+                    <p>18908269130</p>
+                    <p class="postcode">
+                        <span>1</span>
+                        <span>1</span>
+                        <span>1</span>
+                        <span>1</span>
+                        <span>1</span>
+                        <span>1</span>
+                    </p>
+                    </div>
+                    <!--遮罩层-->
+                    <div class="shade">
+                        <a  class="btn_del"></a>
+                        <a  class="btn_modify"></a>
+                    </div>
+                </li>
+            </ul>
+    </div>
+    <!--快递方式-->
+    <div id="express_delivery">
+        <p>选择快递方式</p>
+        <ul class="clear">
+            <li class="selected">
+                <a ><span></span>圆通快递</a>
+                <div class="pop-up">
+                    <b></b>
+                    <p>到付价格=现付价格*1.25，不足1元按1元收取，到付最低15元起。此价格供参考，详情请咨询圆通当地营业网点</p>
+                    <p>资费：15元</p>
+                    <h3>满68元包邮</h3>
+                    <p><a >点击查看是否在配送范围内</a></p>
+                </div>
+            </li>
+            <li><a ><span></span>申通快递</a> <div class="pop-up">
+                <b></b>
+                <p>到付价格=现付价格*1.25，不足1元按1元收取，到付最低15元起。此价格供参考，详情请咨询圆通当地营业网点</p>
+                <p>资费：15元</p>
+                <h3>满68元包邮</h3>
+                <p><a >点击查看是否在配送范围内</a></p>
+            </div></li>
+            <li><a ><span></span>韵达快递</a> <div class="pop-up">
+                <b></b>
+                <p>到付价格=现付价格*1.25，不足1元按1元收取，到付最低15元起。此价格供参考，详情请咨询圆通当地营业网点</p>
+                <p>资费：15元</p>
+                <h3>满68元包邮</h3>
+                <p><a >点击查看是否在配送范围内</a></p>
+            </div></li>
+            <li><a ><span></span>顺丰快递</a> <div class="pop-up">
+                <b></b>
+                <p>到付价格=现付价格*1.25，不足1元按1元收取，到付最低15元起。此价格供参考，详情请咨询圆通当地营业网点</p>
+                <p>资费：15元</p>
+                <h3>满68元包邮</h3>
+                <p><a >点击查看是否在配送范围内</a></p>
+            </div></li>
+            <li><a ><span></span>中通快递</a> <div class="pop-up">
+                <b></b>
+                <p>到付价格=现付价格*1.25，不足1元按1元收取，到付最低15元起。此价格供参考，详情请咨询圆通当地营业网点</p>
+                <p>资费：15元</p>
+                <h3>满68元包邮</h3>
+                <p><a >点击查看是否在配送范围内</a></p>
+            </div></li>
+            <li><a ><span></span>邮政EMS快递</a> <div class="pop-up">
+                <b></b>
+                <p>到付价格=现付价格*1.25，不足1元按1元收取，到付最低15元起。此价格供参考，详情请咨询圆通当地营业网点</p>
+                <p>资费：15元</p>
+                <h3>满68元包邮</h3>
+                <p><a >点击查看是否在配送范围内</a></p>
+            </div></li>
+            <li><a ><span></span>天天快递</a> <div class="pop-up">
+                <b></b>
+                <p>到付价格=现付价格*1.25，不足1元按1元收取，到付最低15元起。此价格供参考，详情请咨询圆通当地营业网点</p>
+                <p>资费：15元</p>
+                <h3>满68元包邮</h3>
+                <p><a >点击查看是否在配送范围内</a></p>
+            </div></li>
+            <li><a ><span></span>全峰快递</a> <div class="pop-up">
+                <b></b>
+                <p>到付价格=现付价格*1.25，不足1元按1元收取，到付最低15元起。此价格供参考，详情请咨询圆通当地营业网点</p>
+                <p>资费：15元</p>
+                <h3>满68元包邮</h3>
+                <p><a >点击查看是否在配送范围内</a></p>
+            </div></li>
+            <li><a ><span></span>百世快递</a> <div class="pop-up">
+                <b></b>
+                <p>到付价格=现付价格*1.25，不足1元按1元收取，到付最低15元起。此价格供参考，详情请咨询圆通当地营业网点</p>
+                <p>资费：15元</p>
+                <h3>满68元包邮</h3>
+                <p><a >点击查看是否在配送范围内</a></p>
+            </div></li>
+            <li><a ><span></span>国通快递</a> <div class="pop-up">
+                <b></b>
+                <p>到付价格=现付价格*1.25，不足1元按1元收取，到付最低15元起。此价格供参考，详情请咨询圆通当地营业网点</p>
+                <p>资费：15元</p>
+                <h3>满68元包邮</h3>
+                <p><a >点击查看是否在配送范围内</a></p>
+            </div></li>
+            <li><a ><span></span>优速快递</a> <div class="pop-up">
+                <b></b>
+                <p>到付价格=现付价格*1.25，不足1元按1元收取，到付最低15元起。此价格供参考，详情请咨询圆通当地营业网点</p>
+                <p>资费：15元</p>
+                <h3>满68元包邮</h3>
+                <p><a >点击查看是否在配送范围内</a></p>
+            </div></li>
+            <li><a ><span></span>如风达快递</a> <div class="pop-up">
+                <b></b>
+                <p>到付价格=现付价格*1.25，不足1元按1元收取，到付最低15元起。此价格供参考，详情请咨询圆通当地营业网点</p>
+                <p>资费：15元</p>
+                <h3>满68元包邮</h3>
+                <p><a >点击查看是否在配送范围内</a></p>
+            </div></li>
+        </ul>
+    </div>
+    <!--支付方式-->
+    <div id="payment">
+        <p>支付方式</p>
+        <ul class="clear">
+            <li class="active"><a >余额支付</a></li>
+            <li><a >支付宝</a></li>
+            <li><a >财付通</a></li>
+            <li><a >银联支付</a></li>
+            <li><a >货到付款</a></li>
+        </ul>
+    </div>
+    <!--红包-->
+    <div id="coupon">
+        选择已有红包
+        <select name="" id="">
+            <option value="">不使用红包</option>
+            <option value="">5元红包</option>
+            <option value="">10元红包</option>
+        </select>
+    </div>
+    <!--产品列表-->
+    <table id="product_list">
+            <thead>
+                <tr>
+                    <td class="pro_info">商品名称</td>
+                    <td class="pro_property">属性</td>
+                    <td class="pro_price">单价</td>
+                    <td class="pro_amount">购买数量</td>
+                    <td class="pro_sum">小计</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="pro_info">
+                        <a  class="lf"><img src="products/qq/p_39.jpg" alt=""></a>
+                        <p class="lf"><a >LEADERS/丽得姿强化补水面膜贴10片 玻尿酸保湿提亮肤色收缩毛孔</a></p>
+                    </td>
+                    <td class="pro_property">
+                        化妆品净含量：10片
+                    </td>
+                    <td class="pro_price">￥109.00</td>
+                    <td class="pro_amount">2</td>
+                    <td class="pro_sum">￥218.00</td>
+                </tr>
+                <tr>
+                    <td class="pro_info">
+                        <a  class="lf"><img src="products/qq/p_39.jpg" alt=""></a>
+                        <p class="lf"><a >LEADERS/丽得姿强化补水面膜贴10片 玻尿酸保湿提亮肤色收缩毛孔</a></p>
+                    </td>
+                    <td class="pro_property">
+                        化妆品净含量：10片
+                    </td>
+                    <td class="pro_price">￥109.00</td>
+                    <td class="pro_amount">2</td>
+                    <td class="pro_sum">￥218.00</td>
+                </tr>
+            </tbody>
+        </table>
+    <!--订单留言-->
+    <p id="mes">
+        订单留言
+        <input type="text">
+        剩余字数：<span>50</span>
+    </p>
+    <!--结算部分-->
+    <div id="amount" class="rt">
+        <ul>
+            <li>商品总价：<span>￥448.00</span></li>
+            <li>优惠金额：<span>￥-48.00</span></li>
+            <li>配送费：<span>￥0.00</span></li>
+            <li>实付款：<b>￥400.00</b></li>
+            <li><a  class="submit_order">提交订单</a> <a  class="goBack">返回购物车</a></li>
+        </ul>
+        <p>订单确认后，您将获得 <span>400</span> 积分 </p>
+    </div>
+
+
+</section>
+<!--页面底部-->
+<footer id="footer">
+    <!--slogan-->
+    <div id="slogan" class="clear wrap">
+        <ul>
+            <li>
+                <a ><img src="img/slogan_1.png" alt=""></a>
+                <div>
+                    <h1>安全保证</h1>
+                    <span>多重保障机制 认证商城</span>
+                </div>
+            </li>
+            <li>
+                <a ><img src="img/slogan_2.png" alt=""></a>
+                <div>
+                    <h1>正品保证</h1>
+                    <span>正品行货 放心选购</span>
+                </div>
+            </li>
+            <li>
+                <a ><img src="img/slogan_3.png" alt=""></a>
+                <div>
+                    <h1>七天无理由退换货</h1>
+                    <span>七天无理由保障消费权益</span>
+                </div>
+            </li>
+            <li>
+                <a ><img src="img/slogan_4.png" alt=""></a>
+                <div>
+                    <h1>天天低价</h1>
+                    <span>价格更低，质量更可靠</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--客服电话-->
+    <div id="service_tel">
+        <h1 class="wrap"><i class="iconfont icon-dianhua"></i>400-4565-345 <span> 客服热线 7 x 24小时 贴心服务</span></h1>
+    </div>
+    <!--帮助信息-->
+    <ul id="help_list" class="wrap clear">
+        <li>
+            <p>新手上路</p>
+            <ul class="help_list_item">
+                <li>
+                    <a >售后流程</a>
+                </li>
+                <li>
+                    <a >购物流程</a>
+                </li>
+                <li>
+                    <a >订购方式</a>
+                </li>
+                <li>
+                    <a >隐私声明</a>
+                </li>
+                <li>
+                    <a >推荐分享说明</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>配送与支付</p>
+            <ul class="help_list_item">
+                <li>
+                    <a >保险需求测试</a>
+                </li>
+                <li>
+                    <a >专题及活动</a>
+                </li>
+                <li>
+                    <a >挑选保险产品</a>
+                </li>
+                <li>
+                    <a >常见问题</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>售后保障</p>
+            <ul class="help_list_item">
+                <li>
+                    <a >售后政策</a>
+                </li>
+                <li>
+                    <a >价格保护</a>
+                </li>
+                <li>
+                    <a >退款说明</a>
+                </li>
+                <li>
+                    <a >返修/退换货</a>
+                </li>
+                <li>
+                    <a >取消订单</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>支付方式</p>
+            <ul class="help_list_item">
+                <li>
+                    <a >货到付款</a>
+                </li>
+                <li>
+                    <a >在线支付</a>
+                </li>
+                <li>
+                    <a >分期付款</a>
+                </li>
+                <li>
+                    <a >邮局汇款</a>
+                </li>
+                <li>
+                    <a >公司转账</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>帮助中心</p>
+            <ul class="help_list_item">
+                <li>
+                    <a >常见问题</a>
+                </li>
+                <li>
+                    <a >使用帮助</a>
+                </li>
+                <li>
+                    <a >用户协议</a>
+                </li>
+                <li>
+                    <a >联系客服</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!--备案号等-->
+    <div id="links" class="wrap">
+        <a >关于我们</a>|<a >公开信息披露</a>|<a >加入我们</a>|<a >联系我们</a>|<a >版权声明</a>|<a >隐私声明</a>|<a >网站地图</a>
+    </div>
+    <p id="copyright" class="wrap"> XXXXXX All Rights Reserved. Technical support:CDDGG Group</p>
+</footer>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/order_payment.js"></script>
+</body>
+</html>

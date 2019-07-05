@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_433252_p5uyrhr8r774x6r.css">
+    <link rel="stylesheet" href="css/product_detail.css">
+</head>
+<body>
+<!--右侧工具菜单-->
+<div id="toolbar">
+    <ul class="toolbar_icon">
+        <li>
+            <a >
+                <i class="iconfont icon-yonghu"></i>
+                用户
+            </a>
+        </li>
+        <li class="cart_icon">
+            <a >
+                <b>0</b>
+                <i class="iconfont icon-gouwuche"></i>
+                购物车
+            </a>
+            <!--右侧内容栏-->
+
+            <div class="toolbar_detail">
+                <div class="toolbar_cart">
+                    <p class="cart_title">
+                        <i class="iconfont icon-guanbi rt"></i>
+                        <i class="iconfont icon-gouwuche"></i>
+                        <span>购物车</span>
+                    </p>
+                    <ul class="cart_list">
+                        <li>
+                            <div class="cart_pic">
+                                <a >
+                                    <img src="products/qq/cp_2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <p class="cart_p_title">
+                                    梵迷琳神仙贵妇膏 素颜霜 紧致 淡化细纹 祛痘
+                                </p>
+                                <p class="cart_p_price">
+                                    <span>123.00 </span>x2
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cart_pic">
+                                <a >
+                                    <img src="products/qq/cp_2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <p class="cart_p_title">
+                                    梵迷琳神仙贵妇膏 素颜霜 紧致 淡化细纹 祛痘
+                                </p>
+                                <p class="cart_p_price">
+                                    <span>123.00 </span>x2
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cart_total">
+                        <div class="lf">
+                            <p><b>2</b> 件商品</p>
+                            <p>共计：<b>123.00</b> 元</p>
+                        </div>
+                        <button id="btnTotal">去购物车结算</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a >
+                <i class="iconfont icon-shoucang"></i>
+                收藏
+            </a>
+        </li>
+        <li>
+            <a >
+                <i class="iconfont icon-zuji"></i>
+                足迹
+            </a>
+        </li>
+        <li>
+            <a >
+                <i class="iconfont icon-erweima"></i>
+                微信
+            </a>
+        </li>
+        <li>
+            <a >
+                <i class="iconfont icon-kefu"></i>
+                客服
+            </a>
+        </li>
+        <li>
+            <a >
+                <i class="iconfont icon-fankui"></i>
+                反馈
+            </a>
+        </li>
+        <li>
+            <a >
+                <i class="iconfont icon-huidingbu"></i>
+                返回顶部
+            </a>
+        </li>
+    </ul>
+    <div class="toolbar_show"></div>
+    <!--右侧内容栏-->
+    <div class="toolbar_detail">
+        <div class="toolbar_cart">
+            <p class="cart_title">
+                <i class="iconfont icon-guanbi rt"></i>
+                <i class="iconfont icon-gouwuche"></i>
+                <span>购物车</span>
+            </p>
+            <ul class="cart_list">
+                <li>
+                    <div class="cart_pic">
+                        <a >
+                            <img src="products/qq/cp_2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <p class="cart_p_title">
+                            梵迷琳神仙贵妇膏 素颜霜 紧致 淡化细纹 祛痘
+                        </p>
+                        <p class="cart_p_price">
+                            <span>123.00 </span>x2
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart_pic">
+                        <a >
+                            <img src="products/qq/cp_2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <p class="cart_p_title">
+                            梵迷琳神仙贵妇膏 素颜霜 紧致 淡化细纹 祛痘
+                        </p>
+                        <p class="cart_p_price">
+                            <span>123.00 </span>x2
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--页面顶部-->
+<header id="top">
+    <div class="wrap">
+        <!--右侧：文字列表-->
+        <ul class="rt">
+            <li>
+                欢迎光临本店！
+                <a  class="login">[请登录]</a>
+                新用户
+                <a  class="register" >[免费注册]</a>
+            </li>
+            <li>
+                <!--边框-->
+                <b></b>
+                <a >我的订单</a>
+            </li>
+            <li>
+                <b></b>
+                <a >购物车</a>
+            </li>
+            <li>
+                <b></b>
+                <a >联系我们</a>
+            </li>
+            <li class="client">
+                <b></b>
+                <a >
+                    客户服务
+                </a>
+                <!--客户服务列表-->
+                <ul id="service-items">
+                    <li><a >常见问题</a></li>
+                    <li><a >在线退换货</a></li>
+                    <li><a >在线投诉</a></li>
+                    <li><a >配送范围</a></li>
+                </ul>
+            </li>
+            <li class="app">
+                <b></b>
+                <a >
+                    <i class="iconfont icon-shouji"></i>
+                    手机版
+                </a>
+                <div id="QR">
+                    <img src="img/QRcode.jpg">
+                </div>
+
+            </li>
+        </ul>
+        <span class="lf">下午好，欢迎光临宏颜知己！ &nbsp;</span>
+        <!--图片：五角星-->
+        <i class="iconfont icon-wujiaoxing lf"></i>
+        <!--链接：收藏-->
+        <a  class="lf">收藏我们</a>
+    </div>
+</header>
+<!--logo+搜索栏-->
+<div id="top_main">
+    <div class="wrap">
+        <!--logo-->
+        <a  class="lf"><img src="img/logo.png" alt=""></a>
+        <!--搜索栏+关键字-->
+        <div id="search_box" class="lf">
+            <!--上：搜索栏-->
+            <div class="search" >
+                <input type="text">
+                <button id="btnSearch">搜索</button>
+            </div>
+            <!--下：关键字-->
+            <ul class="keyWords">
+                <li>
+                    <a >保湿</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a >美白</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a >氨基酸洗面奶</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a >补水</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a >眼霜</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a >口红</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a >BB霜</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a >美白精华</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a >森田</a>
+                </li>
+            </ul>
+        </div>
+        <!--购物车-->
+        <div class="rt shopping_list">
+            <div class="cart">
+                <i class="iconfont icon-gouwuche "></i>
+                我的购物车
+                <em></em>
+                <span id="shopping_amount">200</span>
+            </div>
+            <!--购物车下拉菜单-->
+            <div id="cart_items">
+                <div class="p_space"></div>
+                <!--商品菜单-->
+                <ul class="p_list">
+                    <li>
+                        <div class="p_pic lf">
+                            <a >
+                                <img src="products/p_1.jpg" width="50" >
+                            </a>
+                        </div>
+                        <div class="lf p_info">
+                            <p class="p_title">产品名称</p>
+                            <p class="p-price">价格 <span>X 数量</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p_pic lf">
+                            <a >
+                                <img src="products/p_2.jpg"   width="50">
+                            </a>
+                        </div>
+                        <div class="lf p_info">
+                            <p class="p_title">产品名称</p>
+                            <p class="p_price">价格 <span>X 数量</span></p>
+                        </div>
+                    </li>
+                </ul>
+                <!--结算部分-->
+                <div class="p_total clear">
+                    <div class="p_whole lf">
+                        <p>共 <span>2</span> 件商品</p>
+                        <p>共计 <span class="p_amount">￥121.9</span> </p>
+                    </div>
+                    <button id="btnAccount" >去购物车结算</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主导航-->
+<nav id="nav">
+    <div class="wrap clear">
+        <!--全部商品分类标签-->
+        <div class="cate">
+            <a >全部商品分类</a>
+            <!--商品分类信息-->
+            <ul id="cate_box">
+                <li>
+                    <div class="menu">
+                        <p class="menu_name">
+                            <span><</span>
+                            <a >面部护理</a>
+                        </p>
+                        <ul class="link_name clear">
+                            <li><a >乳液</a></li>
+                            <li><a >面霜</a></li>
+                            <li><a >洁面</a></li>
+                            <li><a >精华</a></li>
+                        </ul>
+                    </div>
+                    <!--子分类弹出框-->
+                    <div class="menu_detail">
+                        <dl class="clear">
+                            <dt>
+                                <a >
+                                    面膜
+                                </a>
+                                <span>&gt</span>
+                            </dt>
+                            <dd >
+                                <a >撕拉面膜</a>
+                                <a >面膜贴</a>
+                                <a >免洗面膜</a>
+                                <a >水洗面膜</a>
+                                <a >睡眠面膜</a>
+                                <a >蚕丝面膜</a>
+                                <a >泥面膜</a>
+                            </dd>
+                        </dl>
+                        <dl class="clear">
+                            <dt>
+                                <a >洁面</a>
+                                <span>&gt</span>
+                            </dt>
+                            <dd>
+                                <a >洁面摩丝</a>
+                                <a >洁面乳</a>
+                                <a >洁面啫喱/胶</a>
+                                <a >面部去角质/磨砂</a>
+                                <a >洁面膏/霜</a>
+                                <a >手工皂</a>
+                                <a >氨基酸洗面奶</a>
+                            </dd>
+                        </dl>
+                        <dl class="clear">
+                            <dt>
+                                <a >化妆水</a>
+                                <span>&gt</span>
+                            </dt>
+                            <dd>
+                                <a >喷雾</a>
+                                <a >精华水</a>
+                                <a >柔肤水</a>
+                                <a >爽肤水</a>
+                                <a >收敛水/紧肤水</a>
+                            </dd>
+                        </dl>
+                        <dl class="clear">
+                            <dt>
+                                <a >眼部护理</a>
+                                <span>&gt</span>
+                            </dt>
+                            <dd>
+                                <a >眼霜</a>
+                                <a >眼部凝胶</a>
+                                <a >眼部精华</a>
+                                <a >蒸汽眼罩</a>
+                                <a >眼膜</a>
+                                <a >精油护理</a>
+                                <a >睫毛滋养液</a>
+                                <a >眼部护理套装</a>
+                                <a >滴/洗眼液</a>
+                            </dd>
+                        </dl>
+                        <dl class="clear">
+                            <dt>
+                                <a >唇部护理</a>
+                                <span>&gt</span>
+                            </dt>
+                            <dd>
+                                <a >润唇膏</a>
+                                <a >唇部精华</a>
+                                <a >唇膜</a>
+                            </dd>
+                        </dl>
+                        <dl class="clear">
+                            <dt>
+                                <a >防晒</a>
+                                <span>&gt</span>
+                            </dt>
+                            <dd>
+                                <a >防晒霜</a>
+                                <a >防晒乳液</a>
+                                <a >防晒隔离乳</a>
+                                <a >防晒喷雾</a>
+                                <a >防晒唇膏</a>
+                                <a >日常防晒</a>
+                                <a >旅行防晒</a>
+                                <a >晒后修复</a>
+                            </dd>
+                        </dl>
+                        <dl class="clear">
+                            <dt>
+                                <a >乳液</a>
+                                <span>&gt</span>
+                            </dt>
+                            <dd>
+                                <a >美白</a>
+                                <a >抗皱</a>
+                                <a >抗老化</a>
+                                <a >抗糖化</a>
+                                <a >补水</a>
+                                <a >啫喱</a>
+                                <a >凝露/凝胶</a>
+                                <a >按摩霜</a>
+                                <a >匀净透亮</a>
+                                <a >瘦脸</a>
+                                <a >提拉紧致</a>
+                                <a >排浊</a>
+                                <a >修复痘痕</a>
+                                <a >排毒</a>
+                                <a >收缩毛孔</a>
+                            </dd>
+                        </dl>
+                        <dl class="clear">
+                            <dt>
+                                <a >精油</a>
+                                <span>&gt</span>
+                            </dt>
+                            <dd>
+                                <a >花水/纯露</a>
+                                <a >基础油</a>
+                                <a >香薰用具</a>
+                                <a >补水</a>
+                                <a >舒缓</a>
+                                <a >美体</a>
+                                <a >焕肤</a>
+                                <a >去黑眼圈</a>
+                                <a >愉悦心情</a>
+                                <a >增强免疫力</a>
+                                <a >深层清洁</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <p class="menu_name">
+                            <span><</span>
+                            <a >身体护理</a>
+                        </p>
+                        <ul class="link_name clear">
+                            <li><a >颈部</a></li>
+                            <li><a >沐浴</a></li>
+                            <li><a >润肤</a></li>
+                            <li><a >精油</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-detail">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <p class="menu_name">
+                            <span><</span>
+                            <a >男士护理</a>
+                        </p>
+                        <ul class="link_name clear">
+                            <li><a >男士面膜</a></li>
+                            <li><a >洗面奶</a></li>
+                            <li><a >剃须护理</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <p class="menu_name">
+                            <span><</span>
+                            <a >洗发护发</a>
+                        </p>
+                        <ul class="link_name clear">
+                            <li><a >洗发</a></li>
+                            <li><a >护发</a></li>
+                            <li><a >染发</a></li>
+                            <li><a >造型</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu_detail">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <p class="menu_name">
+                            <span><</span>
+                            <a >香水彩妆</a>
+                        </p>
+                        <ul class="link_name clear">
+                            <li><a >BB霜</a></li>
+                            <li><a >化妆棉</a></li>
+                            <li><a >女士香水</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-detail">
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <p class="menu_name">
+                            <span><</span>
+                            <a >口腔护理</a>
+                        </p>
+                        <ul class="link_name clear">
+                            <li><a >牙膏/牙粉</a></li>
+                            <li><a >牙刷</a></li>
+                            <li><a >漱口水</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-detail">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="menu">
+                        <p class="menu_name">
+                            <span><</span>
+                            <a >品牌</a>
+                        </p>
+                        <ul class="link_name clear">
+                            <li><a >倩碧</a></li>
+                            <li><a >香奈儿</a></li>
+                            <li><a >迪奥</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-detail">
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!--导航栏-->
+        <ul class="nav">
+            <li>
+                <a >首页</a>
+            </li>
+            <li>
+                <a >日常护理</a>
+            </li>
+            <li>
+                <a >女士专区</a>
+            </li>
+            <li>
+                <a >男士专区</a>
+            </li>
+            <li class="on">
+                <a >限时团购</a>
+            </li>
+            <li>
+                <a >国际大牌</a>
+            </li>
+            <li>
+                <em></em>
+                <a >礼品DIY</a>
+            </li>
+            <li>
+                <a >联系我们</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--主体区-->
+<section id="main" class="clear">
+    <div class="wrap">
+        <!--位置-->
+        <div id="location">
+            <em></em>
+            <a >首页</a>
+            <span>&gt;</span>
+            <a >面膜</a>
+            <span>&gt;</span>
+            <a >面膜贴</a>
+            <span>&gt;</span>
+            <b>丽得姿(Leaders)限量版AMINO水库补水面膜套装20片</b>
+        </div>
+        <!--商品简介-->
+        <div id="pro_intro" class="clear">
+            <!--预览图部分-->
+            <div id="preview">
+                <div id="mediumDiv">
+                    <img id="mImg" src="products/p_35_s1_m.jpg" >
+                    <a></a>
+                    <div id="mask"></div>
+                    <div id="superMask"></div>
+                </div>
+                <div id="largeDiv"></div>
+                <ul id="icon_list">
+                        <li>
+                            <img src="products/p_35_s1.jpg" >
+                        </li>
+                        <li>
+                            <img src="products/p_35_s2.jpg" >
+                        </li>
+                        <li>
+                            <img src="products/p_35_s3.jpg" >
+                        </li>
+                        <li>
+                            <img src="products/p_35_s4.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="products/p_35_s5.jpg" alt="">
+                        </li>
+                    </ul>
+            </div>
+            <!--文字信息-->
+            <div id="pro_info" class="lf clear">
+                <!--商品名称+简介-->
+                <div class="pro_name">
+                    <h3>LEADERS/丽得姿领先润美保湿补水针剂面膜贴10片 韩国进口</h3>
+                    <span>韩国进口 深层补水 针剂水库</span>
+                </div>
+                <!--商品价格等概要-->
+                <ul class="pro_summary">
+                    <li class="pro_price">
+                        <span>价格:</span>
+                        <b>￥109.00</b>
+                      </li>
+                    <li class="pro_id">
+                        <span>编号:</span>
+                        <b>960148</b>
+                    </li>
+                    <li class="pro_grade">
+                        <span>评分：</span>
+                        <b></b>
+                        <a >(已有42662人评价)</a>
+                    </li>
+                    <li class="pro_delivery">
+                        <span>运费：</span>
+                        <div class="content">
+                            北京 &nbsp; 至
+                            <a >&nbsp;北京 <b class="iconfont icon-jiantou-copy-copy-copy"></b> &nbsp;</a>
+                            <p>快递：0.00 EMS:50.00 平邮：100.00</p>
+                        </div>
+                        <!--弹出部分    -->
+                        <div class="delivery_list">
+                            <a >x</a>
+                            <ul class="zx_city clear">
+                                <li><a >北京</a></li>
+                                <li><a >天津</a></li>
+                                <li><a >上海</a></li>
+                                <li><a >重庆</a></li>
+                            </ul>
+                            <ul>
+                                <li><a >河北</a></li>
+                                <li><a >山西</a></li>
+                                <li><a >内蒙古</a></li>
+                                <li><a >辽宁</a></li>
+                                <li><a >吉林</a></li>
+                                <li><a >黑龙江</a></li>
+                                <li class="addr_box">
+                                    <ul class="clear">
+                                        <li>
+                                            <a >石家庄</a>
+                                        </li>
+                                        <li>
+                                            <a >唐山</a>
+                                        </li>
+                                        <li>
+                                            <a >秦皇岛</a>
+                                        </li>
+                                        <li>
+                                            <a >邯郸</a>
+                                        </li>
+                                        <li>
+                                            <a >邢台</a>
+                                        </li>
+                                        <li>
+                                            <a >保定</a>
+                                        </li>
+                                        <li>
+                                            <a >张家口</a>
+                                        </li>
+                                        <li>
+                                            <a >承德</a>
+                                        </li>
+                                        <li>
+                                            <a >沧州</a>
+                                        </li>
+                                        <li>
+                                            <a >廊坊</a>
+                                        </li>
+                                        <li>
+                                            <a >衡水</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li><a >江苏</a></li>
+                                <li><a >浙江</a></li>
+                                <li><a >安徽</a></li>
+                                <li><a >福建</a></li>
+                                <li><a >江西</a></li>
+                                <li><a >山东</a></li>
+                                <li><a >河南</a></li>
+                                <li><a >湖北</a></li>
+                                <li><a >湖南</a></li>
+                                <li><a >广东</a></li>
+                                <li><a >广西</a></li>
+                                <li><a >海南</a></li>
+                                <li><a >四川</a></li>
+                                <li><a >贵州</a></li>
+                                <li><a >云南</a></li>
+                                <li><a >西藏</a></li>
+                                <li><a >陕西</a></li>
+                                <li><a >甘肃</a></li>
+                                <li><a >青海</a></li>
+                                <li><a >宁夏</a></li>
+                                <li><a >新疆</a></li>
+                                <li><a >台湾</a></li>
+                                <li><a >香港</a></li>
+                                <li><a >澳门</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <!--化妆品净含量+购买数量-->
+                <ul class="choose">
+                    <li class="choose_weight">
+                        <span>净含量:</span>
+                        <a >10片<em></em></a>
+                    </li>
+                    <li class="choose_amount">
+                        <span>数量:</span>
+                        <div>
+                            <input type="text" value="1">
+                            <a  class="add"><i class="iconfont icon-f111"></i></a>
+                            <a  class="minus"><i class="iconfont icon-f11"></i></a>
+                            <span>件</span>
+                        </div>
+                        库存14件
+                    </li>
+                    <li class="choose_btn">
+                        <a  class="buy">立即购买</a>
+                        <a  class="add_cart"> <i class="iconfont icon-jiarugouwuche"></i> 加入购物车</a>
+                    </li>
+                </ul>
+            </div>
+            <!--商品推荐-->
+            <div id="recommend" >
+                <p>商品推荐</p>
+                <ul class="recommend_list">
+                    <li class="clear">
+                        <a  title="Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）"><img src="products/qq/p_36.jpg" alt="" ></a>
+                        <p>￥128.00</p>
+                    </li>
+                    <li class="clear">
+                        <a  title="御泥坊 晶亮红石榴亮肤补水面膜贴套装21片（亮肤补水 改善粗糙）"><img src="products/qq/p_37.jpg" alt="" ></a>
+                        <p>￥99.90</p>
+                    </li>
+                    <li class="clear">
+                        <a  title="韩国 丽得姿(LEADERS)美蒂优氨基酸深层补水面膜10片盒 氨基酸 深层补水"><img src="products/qq/p_38.jpg" alt="" ></a>
+                        <p>￥69.00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--左：最终购买-->
+        <div id="view_buy" class="lf clear">
+            <p>浏览了该商品的用户最终购买</p>
+            <ul>
+                <li>
+                    <a  title="Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）"><img src="products/p_36.jpg" alt=""></a>
+                    <p><a  title="Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）">Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）</a></p>
+                    <h6>￥128.00 <s>10.4</s> </h6>
+                </li>
+                <li>
+                    <a  title="Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）"><img src="products/p_36.jpg" alt=""></a>
+                    <p><a  title="Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）">Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）</a></p>
+                    <h6>￥128.00 <s>10.4</s> </h6>
+                </li>
+                <li>
+                    <a  title="Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）"><img src="products/p_36.jpg" alt=""></a>
+                    <p><a  title="Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）">Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）</a></p>
+                    <h6>￥128.00 <s>10.4</s> </h6>
+                </li>
+                <li>
+                    <a  title="Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）"><img src="products/p_36.jpg" alt=""></a>
+                    <p><a  title="Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）">Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）</a></p>
+                    <h6>￥128.00 <s>10.4</s> </h6>
+                </li>
+            </ul>
+        </div>
+        <!--右：排行榜+商品详情-->
+        <div id="right_product" class="lf clear">
+            <!--同类商品销售排行-->
+            <div id="similar_pro">
+                <p><b></b>同类销售商品排行榜</p>
+                <ul class="clear">
+                    <li>
+                        <em>1</em>
+                        <a > <img src="products/p_40.jpg" alt=""></a>
+                        <p><a >Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）</a></p>
+                        <h6>￥128.00</h6>
+                        <button>加入购物车</button>
+                    </li>
+                    <li>
+                        <em>2</em>
+                        <a > <img src="products/p_40.jpg" alt=""></a>
+                        <p><a >Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）</a></p>
+                        <h6>￥128.00</h6>
+                        <button>加入购物车</button>
+                    </li>
+                    <li>
+                        <em>3</em>
+                        <a > <img src="products/p_40.jpg" alt=""></a>
+                        <p><a >Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）</a></p>
+                        <h6>￥128.00</h6>
+                        <button>加入购物车</button>
+                    </li>
+                    <li>
+                        <em>4</em>
+                        <a > <img src="products/p_40.jpg" alt=""></a>
+                        <p><a >Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）</a></p>
+                        <h6>￥128.00</h6>
+                        <button>加入购物车</button>
+                    </li>
+                    <li>
+                        <em>5</em>
+                        <a > <img src="products/p_40.jpg" alt=""></a>
+                        <p><a >Mediheal可莱丝 美迪惠尔毛孔紧致黑炭面膜10片 水库针剂(保湿补水 睡眠 亮肤 护肤品 男女士）</a></p>
+                        <h6>￥128.00</h6>
+                        <button>加入购物车</button>
+                    </li>
+                </ul>
+            </div>
+            <!--商品详情-->
+            <div id="product_detail">
+                <!--页签-->
+                <ul class="main_tabs clear">
+                    <li class="active">
+                        <a href="#product_info" data-toggle="tab">商品详情</a>
+                        <b></b>
+                    </li>
+                    <li>
+                        <a href="#comment_list" data-toggle="tab">累计评价</a>
+                        <b></b>
+                    </li>
+                </ul>
+                <div id="comment">
+                    <!--商品详情+评价-->
+                    <div id="product_info">
+                        <ul class="detail_list clear">
+                            <li>产品名称：LEADERS/丽得姿领先润美水库补水美白保湿面膜纸10片韩国男女学生</li>
+                            <li>化妆品保质期：24个月</li>
+                            <li>限期使用日期范围：2017-01-09</li>
+                            <li>面膜分类：贴片式</li>
+                            <li>规格类型：正常规格</li>
+                            <li>化妆品净含量：10片</li>
+                            <li>品牌：LEADERS/丽得姿</li>
+                            <li>面膜单品：领先润美保湿补水美白</li>
+                            <li>是否为特殊用途化妆品：否</li>
+                            <li>功效：补水 损伤修复</li>
+                        </ul>
+                        <div class="detail_content">
+                            <img src="products/p_d_1.jpg" alt="">
+                            <img src="products/p_d_2.jpg" alt="">
+                            <img src="products/p_d_3.jpg" alt="">
+                            <img src="products/p_d_4.jpg" alt="">
+                            <img src="products/p_d_5.jpg" alt="">
+                            <img src="products/p_d_6.jpg" alt="">
+                            <img src="products/p_d_7.jpg" alt="">
+                            <img src="products/p_d_8.jpg" alt="">
+                            <img src="products/p_d_9.jpg" alt="">
+                            <img src="products/p_d_10.jpg" alt="">
+                            <img src="products/p_d_11.jpg" alt="">
+                            <img src="products/p_d_12.jpg" alt="">
+                            <img src="products/p_d_13.jpg" alt="">
+                            <img src="products/p_d_14.jpg" alt="">
+                            <img src="products/p_d_15.jpg" alt="">
+                            <img src="products/p_d_16.jpg" alt="">
+                        </div>
+                    </div>
+                    <p>累计评价</p>
+                    <!--评价详细-->
+                    <div id="comment_list">
+                        <!--评分+买家印象-->
+                        <div class="m_content clear">
+                            <div class="rate lf">
+                                <b>96</b><span>%</span>
+                                <p>好评度</p>
+                            </div>
+                            <div class="percent lf">
+                                <dl class="clear">
+                                    <dt>好评(96%)</dt>
+                                    <dd><p style="width:96px"></p></dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt>中评(3%)</dt>
+                                    <dd><p style="width:3px"></p></dd>
+                                </dl>
+                                <dl class="clear">
+                                    <dt>差评(1%)</dt>
+                                    <dd><p style="width:1px"></p></dd>
+                                </dl>
+                            </div>
+                            <div class="buyers lf">
+                                <p>买家印象：</p>
+                                <ul>
+                                    <li>价格实惠(200)</li>
+                                    <li>物流速度快(124)</li>
+                                    <li>不错的面膜(98)</li>
+                                    <li>补水保湿(87)</li>
+                                    <li>补水不错(66)</li>
+                                    <li>效果不错(57)</li>
+                                    <li>补水效果好(44)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--评论页签-->
+                        <div class="comment_tabs">
+                            <ul class="filter_list  lf clear">
+                                <li class="active"><a data-toggle="tab" href="#commentAll">全部评价</a></li>
+                                <li><a data-toggle="tab" href="#commentImg">晒图(<span>9</span>)</a></li>
+                                <li><a data-toggle="tab" href="#commentAppend">追评(<span>10</span>)</a></li>
+                                <li><a data-toggle="tab" href="#positive">好评(<span>192</span>)</a></li>
+                                <li><a data-toggle="tab" href="#moderate">中评(<span>6</span>)</a></li>
+                                <li><a data-toggle="tab" href="#negative">差评(<span>2</span>)</a></li>
+                            </ul>
+                            <p class=" rt">
+                                <a > 推荐排序 <i class="iconfont icon-jiantou-copy-copy-copy"></i></a>
+
+                            </p>
+                            <!--下拉菜单-->
+                            <div class="sort">
+                                <p>
+                                    <a > 推荐排序 <i class="iconfont icon-jiantou-up"></i></a>
+                                </p>
+                                <ul>
+                                    <li><a >推荐排序</a></li>
+                                    <li><a >时间排序</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--评论详情-->
+                        <div id="comment_detail" class="comment_style">
+                                <ul class="clear">
+                                    <li class="clear">
+                                    <div class="lf user_info">
+                                        <img src="img/people.png" alt="" width="30">
+                                        <p>w**e</p>
+                                    </div>
+                                    <div class="lf comment_cont">
+                                        <em></em>
+                                        <h5>还好，一般般吧</h5>
+                                        <p><span>化妆品净含量：10片</span> <span>2016-02-21 10:22</span></p>
+                                    </div>
+                                </li>
+                                    <li class="clear">
+                                    <div class="lf user_info">
+                                        <img src="img/people.png" alt="" width="30">
+                                        <p>w**e</p>
+                                    </div>
+                                    <div class="lf comment_cont">
+                                        <em></em>
+                                        <h5>还好，一般般吧</h5>
+                                        <ul class="pic_list clear">
+                                            <li><a ><img src="img/user_img1.jpg" alt="" width="48" height="48"></a></li>
+                                            <li><a ><img src="img/user_img1.jpg" alt="" width="48" height="48"></a></li>
+                                        </ul>
+                                        <p><span>化妆品净含量：10片</span> <span>2016-02-21 10:22</span></p>
+                                    </div>
+                                </li>
+                                    <li class="clear">
+                                    <div class="lf user_info">
+                                        <img src="img/people.png" alt="" width="30">
+                                        <p>w**e</p>
+                                    </div>
+                                    <div class="lf comment_cont ">
+                                        <em></em>
+                                        <h5>还好，一般般吧</h5>
+                                        <ul class="tag_list clear">
+                                            <li>物流速度快</li>
+                                            <li>补水效果好</li>
+                                            <li>很好用</li>
+                                            <li>还可以</li>
+                                        </ul>
+                                        <p><span>化妆品净含量：10片</span> <span>2016-02-21 10:22</span></p>
+                                        <div class="comment_append">
+                                            <p>[购买7天后追评]</p>
+                                            <span>真的很好用</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                </ul>
+                            </div>
+                        <!--分页-->
+                        <div class="comment_page rt">
+                            <ul>
+                                <li ><a  class="prev">上一页</a></li>
+                                <li><a >1</a></li>
+                                <li><a  class="page_now">2</a></li>
+                                <li><a >3</a></li>
+                                <li><a >4</a></li>
+                                <li><a >5</a></li>
+                                <li><a >6</a></li>
+                                <li>...</li>
+                                <li><a  class="next">下一页</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--猜你喜欢-->
+        <div id="user_like">
+            <p>猜你喜欢  <span>1/4</span></p>
+            <div class="userLike_box">
+                <a  class="userLike_prev disabled"><b class="iconfont icon-zuojiantou"></b></a>
+                <a  class="userLike_next"><b class="iconfont icon-youjiantou"></b></a>
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--页面底部-->
+<footer id="footer">
+    <!--slogan-->
+    <div id="slogan" class="clear wrap">
+        <ul>
+            <li>
+                <a ><img src="img/slogan_1.png" alt=""></a>
+                <div>
+                    <h1>安全保证</h1>
+                    <span>多重保障机制 认证商城</span>
+                </div>
+            </li>
+            <li>
+                <a ><img src="img/slogan_2.png" alt=""></a>
+                <div>
+                    <h1>正品保证</h1>
+                    <span>正品行货 放心选购</span>
+                </div>
+            </li>
+            <li>
+                <a ><img src="img/slogan_3.png" alt=""></a>
+                <div>
+                    <h1>七天无理由退换货</h1>
+                    <span>七天无理由保障消费权益</span>
+                </div>
+            </li>
+            <li>
+                <a ><img src="img/slogan_4.png" alt=""></a>
+                <div>
+                    <h1>天天低价</h1>
+                    <span>价格更低，质量更可靠</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--客服电话-->
+    <div id="service_tel">
+        <h1 class="wrap"><i class="iconfont icon-dianhua"></i>400-4565-345 <span> 客服热线 7 x 24小时 贴心服务</span></h1>
+    </div>
+    <!--帮助信息-->
+    <ul id="help_list" class="wrap clear">
+        <li>
+            <p>新手上路</p>
+            <ul class="help_list_item">
+                <li>
+                    <a >售后流程</a>
+                </li>
+                <li>
+                    <a >购物流程</a>
+                </li>
+                <li>
+                    <a >订购方式</a>
+                </li>
+                <li>
+                    <a >隐私声明</a>
+                </li>
+                <li>
+                    <a >推荐分享说明</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>配送与支付</p>
+            <ul class="help_list_item">
+                <li>
+                    <a >保险需求测试</a>
+                </li>
+                <li>
+                    <a >专题及活动</a>
+                </li>
+                <li>
+                    <a >挑选保险产品</a>
+                </li>
+                <li>
+                    <a >常见问题</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>售后保障</p>
+            <ul class="help_list_item">
+                <li>
+                    <a >售后政策</a>
+                </li>
+                <li>
+                    <a >价格保护</a>
+                </li>
+                <li>
+                    <a >退款说明</a>
+                </li>
+                <li>
+                    <a >返修/退换货</a>
+                </li>
+                <li>
+                    <a >取消订单</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>支付方式</p>
+            <ul class="help_list_item">
+                <li>
+                    <a >货到付款</a>
+                </li>
+                <li>
+                    <a >在线支付</a>
+                </li>
+                <li>
+                    <a >分期付款</a>
+                </li>
+                <li>
+                    <a >邮局汇款</a>
+                </li>
+                <li>
+                    <a >公司转账</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>帮助中心</p>
+            <ul class="help_list_item">
+                <li>
+                    <a >常见问题</a>
+                </li>
+                <li>
+                    <a >使用帮助</a>
+                </li>
+                <li>
+                    <a >用户协议</a>
+                </li>
+                <li>
+                    <a >联系客服</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!--备案号等-->
+    <div id="links" class="wrap">
+        <a >关于我们</a>|<a >公开信息披露</a>|<a >加入我们</a>|<a >联系我们</a>|<a >版权声明</a>|<a >隐私声明</a>|<a >网站地图</a>
+    </div>
+    <p id="copyright" class="wrap"> XXXXXX All Rights Reserved. Technical support:CDDGG Group</p>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/product_detail.js"></script>
+    <script src="js/common.js"></script>
+</footer>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/product_list.js"></script>
+</body>
+</html>
