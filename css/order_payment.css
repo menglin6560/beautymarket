@@ -1,0 +1,359 @@
+#cate_box{
+    display:none;
+}
+.cate:hover #cate_box{
+    display:block;
+}
+/*主体部分*/
+#main{
+    width:1160px;
+    margin:0 auto;
+}
+#main>img{
+    margin:20px 0;
+}
+#main>h1{
+    font-size:18px;
+    font-weight: normal;
+    color:#232323;
+}
+#addr{
+    width:1160px;
+    margin-top:10px;
+}
+#addr>p{
+    height:40px;
+    background:#EEEEEE;
+    text-align: center;
+    padding-right:10px;
+    font-size: 14px;
+    line-height: 40px;
+    color:#232323;
+}
+#addr>p>a{
+    color:#EC124A;
+    font-size: 14px;
+}
+.addr_box{
+    margin-top:15px;
+}
+.addr_box li{
+    float:left;
+    position: relative;
+    margin:0 13px;
+    background: url("../img/xf_bg.png") no-repeat;
+}
+.addr_box li .addr_cont{
+    width:360px;
+    height:220px;
+    padding:20px;
+    box-sizing: border-box;
+}
+.addr_box li p{
+    font-size:14px;
+    line-height:25px;
+    color:#232323;
+}
+.addr_box li.addr_choose .addr_cont{
+    background:url("../img/confirm.png") no-repeat;
+}
+.postcode{
+    position:absolute;
+    bottom:18px;
+    left:26px;
+}
+.postcode span{
+    margin-right:17.5px;
+}
+.default{
+    position: absolute;
+    left:0;
+    top:0;
+    padding:5px 15px;
+    background:rgba(0,0,0,.4);
+    color:#fff;
+    font-size: 16px;
+}
+.shade{
+    display: none;
+    width:360px;
+    height: 220px;
+    background:rgba(0,0,0,.3);
+    position:absolute;
+    top:0;
+    left:0;
+    line-height: 220px;
+    text-align: center;
+}
+.shade a{
+    display:inline-block;
+    width:42px;
+    height:44px;
+    background:url("../img/button_icon.png") no-repeat ;
+}
+.shade .btn_modify{
+    background-position:-47px 0;
+    width:44px;
+    margin-left:20px;
+}
+#addr li:hover .shade{
+    display:block;
+    z-index:100;
+}
+/*快递方式*/
+#express_delivery{
+    margin-top:15px;
+    background:#EDEDED;
+    padding:0 5px;
+}
+#express_delivery>p{
+    height:40px;
+    font-size:14px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px dotted #C5C5C5;
+    color:#232323;
+}
+#express_delivery ul li{
+    float:left;
+    font-size:14px;
+    padding:5px 8px;
+    background:#fff;
+    margin:10px;
+    position: relative;
+    border-radius: 3px;
+    border:1px solid transparent;
+}
+#express_delivery ul li.selected{
+    background:#3498DB;
+    border:1px solid #3498DB;
+
+}
+#express_delivery ul li.selected a{
+    color:#fff;
+}
+#express_delivery li.selected span{
+    background:url("../img/input-checked.png") no-repeat;
+
+    vertical-align: text-top;
+}
+#express_delivery ul li.selected:hover{
+    background:#72C5FD;
+}
+#express_delivery li>a{
+    color:#232323;
+}
+#express_delivery li>a:hover{
+    color:#A7A7A7;
+}
+#express_delivery li span{
+    display:inline-block;
+    width:16px;
+    height:16px;
+    background:url("../img/kuaidi.png") no-repeat;
+    margin-right:8px;
+    vertical-align: middle;
+}
+.pop-up{
+    width:230px;
+    padding:10px;
+    box-shadow: 0 0 6px 2px #ddd;
+    position:absolute;
+    left:0;
+    top:35px;
+    background-color:#fff;
+    z-index: 100;
+    display:none;
+}
+#express_delivery li:hover .pop-up{
+    display:block;
+}
+.pop-up b{
+    display: block;
+    border-width:9px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    position:absolute;
+    top:-18px;
+    left:20px;
+    z-index: 200;
+}
+.pop-up p{
+    color:#232323;
+    line-height: 20px;
+    font-size:12px;
+}
+.pop-up h3{
+    color:#EC124A;
+    margin:5px 0;
+    font-weight: normal;
+}
+.pop-up a{
+    color:#232323;
+}
+.pop-up a:hover{
+    color:#EC124A;
+    text-decoration: underline;
+}
+/*支付方式*/
+#payment{
+    margin-top:20px;
+    border-bottom:1px solid #ddd;
+}
+#payment>p{
+    color:#232323;
+    font-size: 14px;
+    border-bottom: 1px dashed #ddd;
+    height:40px;
+    line-height: 40px;
+}
+#payment ul li{
+    float:left;
+    border:1px solid #ddd;
+    padding:5px 8px;
+    margin:10px 15px;
+}
+#payment ul li.active{
+    border:2px solid #EC124A;
+    padding:4px 7px;
+}
+#payment ul li a{
+    color:#232323;
+    font-size:14px;
+}
+#payment li>a:hover{
+    color:#A7A7A7;
+}
+#coupon{
+    margin-top:20px;
+    color:#232323
+}
+#coupon select{
+    width:120px;
+    height:30px;
+    border:1px solid #ddd;
+    margin-left:10px;
+    font-size:12px;
+
+}
+/*商品列表*/
+#product_list{
+    margin-top:10px;
+    border:1px solid #ddd;
+    border-collapse:collapse;
+}
+#product_list thead tr{
+    height:40px;
+    background:#EDEDED;
+    font-size:16px;
+    color:#232323;
+}
+#product_list td{
+    text-align: center;
+    color:#232323;
+}
+#product_list tbody td{
+    border-bottom: 1px dashed #ddd;
+}
+#product_list tbody td{
+    font-size:14px;
+}
+#product_list td.pro_info{
+    width:407px;
+}
+#product_list td.pro_property{
+    width:307px;
+
+}
+#product_list td.pro_price{
+    width:155px;
+
+}
+#product_list td.pro_amount{
+    width:125px;
+}
+#product_list td.pro_sum{
+    width:155px;
+}
+#product_list tbody .pro_info{
+}
+#product_list tbody .pro_info>a{
+    border:1px solid #ddd;
+    margin:10px;
+}
+#product_list tbody .pro_info p{
+    width:250px;
+    font-size:14px;
+    margin-top:10px;
+    text-align: left;
+}
+#product_list tbody .pro_info p a{
+    color:#232323;
+}
+#product_list tbody .pro_sum{
+    color:#EC124A;
+    font-weight: bold;
+}
+#product_list tbody .pro_property{
+    color:#666;
+}
+/*订单留言*/
+#mes{
+    margin-top:10px;
+    color:#232323;
+}
+#mes input{
+    width:512px;
+    margin:0 5px;
+    height:25px;
+}
+#mes span{
+    color:#EC124A;
+}
+
+/*结算部分*/
+#amount{
+    margin-top:40px;
+    width:310px;
+    box-sizing: border-box;
+}
+#amount li{
+    font-size:14px;
+    color:#232323;
+    margin:15px 0;
+    padding-left:118px;
+}
+#amount li span{
+    color:#EC124A;
+}
+#amount b{
+    font-size:18px;
+    color:#EC124A;
+}
+#amount li a{
+    text-align: center;
+    display:inline-block;
+    width:145px;
+    height:35px;
+    font-size:18px;
+    color:#fff;
+    line-height: 35px;
+}
+#amount li a.submit_order{
+    background-color: #EC124A;
+    margin-right:15px;
+}
+#amount li a.goBack{
+    background-color: #EBA200;
+}
+#amount li:last-child{
+    padding:0;
+}
+#amount p{
+    text-align: right;
+    color: #223322;
+}
+#amount p span{
+    color:#EC124A;
+    font-size: 14px;
+}

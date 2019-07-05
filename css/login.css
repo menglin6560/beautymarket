@@ -1,0 +1,105 @@
+.login_box{
+    width:1200px;
+    height:840px;
+    margin:0 auto;
+}
+/*logo+电话*/
+.phone{
+    height:77px;
+    line-height: 77px;
+    display:inline-block;
+    background: url("../img/x-d_03.png") no-repeat left;
+    padding-left:20px;
+    font-size:16px;
+    margin-left:20px;
+    margin-bottom:15px;
+}
+.phone b{
+    font-size: 24px;
+    color:#FB550C;
+    font-family:Impact;
+}
+/*主体*/
+section{
+    margin-top:50px;
+    border-bottom: 1px solid #ddd;
+}
+section img{
+    width:611px;
+}
+/*登录框*/
+form{
+    margin-top:60px;
+    float:right;
+    width:455px;
+    border-radius: 5px;
+    border:1px solid #ddd;
+    box-shadow: 0 0 3px 0 #ddd;
+    font-size:14px;
+    color:#000;
+    padding:0 30px;
+    box-sizing: border-box;
+}
+table{
+    margin:30px auto;
+}
+
+table p{
+    font-size:24px;
+    margin-bottom:20px;
+}
+table span{
+    float:right;
+    font-size:14px;
+}
+table span a{
+    color:#FB550C;
+}
+table input.uName,.uPwd{
+    width:300px;
+    height:40px;
+    padding-right:20px;
+    border:1px solid #ccc;
+    margin-left:5px;
+}
+.input_tip {
+    height:20px;
+    color:#666;
+    font-size:11px;
+    visibility:hidden;
+}
+table .iconfont{
+    font-size:11px;
+    color:#999;
+    margin-left:5px;
+}
+.uName{
+    background: url("../img/i_u.png") no-repeat 285px center;
+}
+.uPwd{
+    background: url("../img/i_pwd.png") no-repeat 285px center;
+}
+#btnLogin{
+    width:322px;
+    height:40px;
+    font-size:16px;
+    background-color: #FB550C;
+    color:#fff;
+    text-align: center;
+    line-height: 40px;
+    border:0;
+}
+table .txt{
+    font-size: 12px;
+}
+table .forget{
+    float:right;
+    font-size:12px;
+    color:#FB550C;
+}
+/*底部*/
+footer{
+    margin-top:20px;
+    text-align: center;
+    color:#CAB9C4;
+}

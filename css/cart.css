@@ -1,0 +1,177 @@
+#cate_box{
+    display:none;
+}
+.cate:hover #cate_box{
+    display:block;
+}
+/*主体部分*/
+#main .wrap>img{
+    margin:20px 0;
+}
+#cart_tab{
+    height:40px;
+    line-height: 40px;
+    background:#F3F3F3;
+    border:1px solid #ddd;
+    padding-left:10px;
+}
+#cart_tab>li{
+    float:left;
+    color:#000;
+}
+#cart_tab li.selectAll{
+    width:80px;
+
+}
+.selectAll input{
+    position:relative;
+    top:2px;
+    margin-right:7px;
+}
+.th_info{
+    width:507px;
+    padding-left:91px;
+}
+.th_price{
+    width:120px;
+    padding-left:10px;
+}
+
+.th_amount{
+    width:110px;
+    padding-left:10px;
+}
+.th_sum{
+    width:140px;
+}
+.th_op   {
+    width:120px;
+}
+
+#cart_content>li{
+    padding:20px 12px;
+    border-bottom:1px solid #ddd;
+}
+#cart_content li ul>li{
+    float:left;
+}
+#cart_content .td_check{
+    width:40px;
+}
+.td_info{
+    width:400px;
+}
+.td_info>a{
+    border:1px solid #ddd;
+    margin-right:15px;
+}
+.td_info>p{
+    width:270px;
+    line-height: 18px;
+
+}
+.td_info>p>a{
+    color:#000;
+}
+.td_info>p>a:hover{
+    color:#EC124A;
+}
+.td_sort{
+    width:213px;
+    padding:0 12px;
+}
+.td_price{
+    width:112px;
+    font-weight: bold;
+}
+.td_amount{
+    width:127px;
+}
+.td_amount input{
+    height:18px;
+    border:1px solid #ddd;
+    text-align: center;
+
+}
+.td_amount a{
+    display:inline-block;
+    width:15px;
+    height:20px;
+    border:1px solid #ddd;
+    text-align: center;
+    line-height: 20px;
+}
+.td_amount a.menus{
+    border-right:0;
+}
+.td_amount a.add{
+    border-left:0;
+}
+.td_amount input{
+    width:50px;
+}
+.td_sum{
+    width:107px;
+    color:#EC124A;
+    font-weight:bold;
+}
+.td_op{
+    padding-left:23px;
+}
+.td_op a{
+    color:#000;
+}
+.td_op a:hover{
+    color:#EC124A;
+}
+/*结算栏*/
+#account{
+    margin-top:20px;
+    height:50px;
+     line-height:50px;
+    background:#F3F3F3;
+}
+.selectALL2{
+    width:55px;
+    padding-left:5px;
+    display: inline-block;
+    color:#000;
+}
+.del{
+    margin-left:25px;
+}
+.collect{
+    margin-left:25px;
+}
+.selected {
+    display:inline-block;
+}
+.selected b{
+    font-size:18px;
+    color:#EC124A;
+}
+.price_sum{
+    display:inline-block;
+    margin-left:20px;
+}
+.price_sum span{
+    font-size:24px;
+    color:#EC124A;
+    font-weight: bold;
+}
+.btn_area{
+    height:50px;
+    width:120px;
+
+    background-color: #EC124A;
+    color:#fff;
+    font-size:24px;
+    margin-left:20px;
+    border:0;
+}
+#account a{
+    color:#000;
+}
+#account a:hover{
+    color:#EC124A;
+}
